@@ -1,0 +1,135 @@
+@import '../../responsive'; 
+.address-container{
+    width:1300px;
+    height: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    .address-wraper{
+        width: 1400px;
+        height: 70vh;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+        @include mobile{
+            width: 100%;
+            height: auto;
+        }
+       .address-form{
+           width: 700px;
+           height: auto;
+           margin: 0 auto;
+            @include mobile {
+                width: 80%;
+                height: auto;
+            }
+           form{
+               margin: 0 auto;
+               width: 100%;
+               height: auto;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               background-color: #FFF;
+               margin-top: 30px;
+               border: 1px dotted #A8A8A8;
+               border-radius: 5px;
+        
+                @include mobile {
+                    width: 100%;
+                    height: auto;
+                }
+               div{
+                    span{
+                        font-size: 14px;
+                        color: red;
+                    }
+                   width: 100%;
+                   display: flex;
+                   flex-direction: column;
+                   padding: 10px;
+                   label{
+                       font-size: 20px;
+                       font-weight: 400;
+                       span{
+                           color: red;
+                       }
+                   }
+                   input{
+                       height: 40px;
+                       outline: none;
+                       padding-left: 10px;
+                       border: 1px solid rgb(180, 172, 172);
+                       border-top: transparent;
+                       border-left: transparent;
+                       border-right: transparent;
+                       background-color: transparent;
+                       width: 100%;
+                   }
+                   button{
+                       height: 45px;
+                       font-size: 25px;
+                       background: none;
+                       margin-top: 20px;
+                       border: 0.5px solid blue;
+                       color: blue;
+                       cursor: pointer;
+                       @include mobile{
+                        background-color: gray;
+                        color: white;
+                        border: none;
+                       }
+                   }
+               }
+           }
+       }
+    }
+}
+
+.payment-sumary-payment{
+    width: 400px;
+    height: auto;
+    min-height: 350px;
+    border: 1px dotted gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.list-prod-order{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .prod-item{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border: 1px solid gray;
+    }
+}
+
+.checkout .form-control{
+    border-radius: 0px !important;
+}
+.checkout .form-control:focus{
+    border: 1px solid #000 !important;
+    box-shadow: none !important;
+}
+.checkout .nav-link{
+    border: 1px solid #000;
+    border-radius: 0px;
+    margin-bottom: 8px;
+}
+.checkout .tab-content{
+    padding-right: 10px;
+}

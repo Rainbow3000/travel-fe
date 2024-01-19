@@ -1,0 +1,75 @@
+@import '../../responsive';
+.newsletter-container{
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    .newsletter-container-wrapper{
+        width: 1400px;
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include mobile{
+            width: 100%;
+        }
+        .newsletter-title{
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+            @include mobile {
+                    font-size: 25px;
+                    text-align: center;
+                }
+        }
+        .newsletter-des{
+            font-size: 25px;
+            color: #fff;
+            @include mobile {
+                    font-size: 18px;
+                    text-align: center;
+                }
+        }
+        .newsletter-your-email{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            @include mobile {
+                flex-direction: column;
+                   margin: 10px 0 20px;
+
+                }
+            input{
+                width: 400px;
+                padding-left: 20px;
+                height: 45px;
+                border-radius: 5px;
+                border: 1px solid rgb(196, 191, 191);
+                outline: none;
+                @include mobile {
+                        width: 200px;
+                    }
+            }
+            button{
+                width: 120px;
+                height: 45px;
+                font-weight: bold;
+                background-color: teal;
+                color: #fff;
+                border: none;
+                font-size: 25px;
+                margin-left: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include mobile{
+                    margin-top: 20px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

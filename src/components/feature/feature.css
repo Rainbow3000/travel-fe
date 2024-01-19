@@ -1,0 +1,22 @@
+.feature-item {
+    position: relative;
+}
+
+.feature-item-info {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    color: white; 
+    font-weight: bold;
+}
+.feature-item-info h1{
+    font-size: 58px;
+    font-weight: bold;
+    color: white;
+}
+.feature-item-info span{
+    font-weight: bold;
+    font-size: 18px;
+}

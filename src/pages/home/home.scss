@@ -1,0 +1,19 @@
+
+@import '../../responsive'; 
+.home-area-product{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    .home-area-product-wraper{
+        overflow-x: hidden !important;
+        width: 1400px;
+        height: auto;
+        display: flex;
+        margin: 0 auto;
+        @include mobile{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

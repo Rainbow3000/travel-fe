@@ -1,0 +1,25 @@
+.success-container{
+    width: 1400px;
+    height: 80vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:  0 auto;
+    h1{
+        color:green;
+        margin-top: 20px;
+    }
+    button{
+        width: 222px;
+        height: 35px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+        box-shadow: 5px 5px 30px green;
+        border: none;
+        border-radius: 5px;
+        background:none;
+    }
+}

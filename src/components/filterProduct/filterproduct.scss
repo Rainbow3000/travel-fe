@@ -1,0 +1,48 @@
+@import "../../responsive"; 
+.filter-product-container{
+    width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    flex-direction: column;
+    @include mobile{
+        width: 100%;
+    }
+    .filter-product-type{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        label{
+            font-size: 20px;
+            @include mobile{
+                display: none;
+            }
+        }
+        select{
+            width: 120px;
+            height: 40px;
+            font-size: 18px;      
+        }
+        div{
+            &:first-child{
+                select{
+                    margin-left: 10px;
+                    @include mobile{
+                        margin-left: 0;
+                    }
+                }
+            }
+            &:last-child{
+                select {
+                    margin-left: 10px;
+                    @include mobile {
+                            margin-left: 0;
+                        }
+                }
+            }
+        }
+    }
+}
